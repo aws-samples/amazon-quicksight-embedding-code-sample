@@ -5,7 +5,7 @@ With Amazon QuickSight embedded analytics, you can seamlessly integrate data-dri
 
 **In this code sample, we will dive deep into the front-end and back-end code that powers this multi-tenant [Embedding Demo](https://www.oktank.poweredbyquicksight.aws.dev/).**
 
-:no_good: *Disclaimer: This code sample is meant for demo purposes only. In a production environment, you will want to give least privilege access to your Lambda functions and configure additional security measures wherever necessary.*
+:no_good: *Disclaimer: This code sample is meant for demo purposes only. In a production environment, you will want to grant least privilege access to your Lambda functions and configure additional security measures wherever necessary.*
 
 ## :star2: Powered by QuickSight Program
 
