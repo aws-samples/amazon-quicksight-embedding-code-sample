@@ -3,18 +3,20 @@
 ## :bulb: Overview
 With Amazon QuickSight embedded analytics, you can seamlessly integrate data-driven experiences into your software applications. You can style the embedded components to match your brand. This capability brings the power of QuickSight to your end users, where they can analyze and interact with data without ever leaving the application. Improving the user experience by reducing cognitive complexity gives users a better opportunity for deeper understanding and effectiveness.
 
-**In this code sample, we will take a deeper dive into this multi-tenant [Embedding Demo](https://www.oktank.poweredbyquicksight.aws.dev/).  1/ The backend Lambda functions that are being called to embed various QuickSight resources and 2/ The front-end React component that handles the embedding session.**
+**In this code sample, we will dive deep into the front-end and back-end code that powers this multi-tenant [Embedding Demo](https://www.oktank.poweredbyquicksight.aws.dev/).**
 
-:no_good: *Disclaimer: This code sample is meant for demo purposes only. In a production environment, you will want to give least privelege access to your Lambda functions and configure additional security measures wherever necessary.*
+:no_good: *Disclaimer: This code sample is meant for demo purposes only. In a production environment, you will want to give least privilege access to your Lambda functions and configure additional security measures wherever necessary.*
 
-## Powered by QuickSight Program
+## :star2: Powered by QuickSight Program
+
+Are you an ISV or a SaaS Provider interested in embedding analytics into your application?
 
 Powered by QuickSight is an AWS Program that provides technology enablement and go-to market support through the AWS Partner team, allowing ISVs to embed QuickSight's powerful analytics into applications to enable data-driven experiences for millions of users.
 
 Interested? 
 
-- Register [Here](https://aws.amazon.com/quicksight/embedded-analytics/powered-by-quicksight/)
 - Learn more on this [Blog](https://aws.amazon.com/blogs/big-data/new-powered-by-quicksight-program-helps-aws-partners-embed-interactive-analytics-in-applications-to-enable-data-driven-experiences/)
+- Register [Here](https://aws.amazon.com/quicksight/embedded-analytics/powered-by-quicksight/)
 
 ## :closed_lock_with_key: Security
 
