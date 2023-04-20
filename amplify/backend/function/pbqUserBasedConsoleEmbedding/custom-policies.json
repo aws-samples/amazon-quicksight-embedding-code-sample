@@ -1,0 +1,13 @@
+[
+  {
+    "Action": [
+      "quicksight:DescribeNamespace",
+      "quicksight:CreateGroupMembership",
+      "quicksight:RegisterUser",
+      "quicksight:DescribeUser",
+      "quicksight:GenerateEmbedUrlForRegisteredUser"
+    ],
+    "Resource": ["*"],
+    "Effect": "Allow"
+}
+]

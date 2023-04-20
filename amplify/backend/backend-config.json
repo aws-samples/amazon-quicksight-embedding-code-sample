@@ -1,0 +1,314 @@
+{
+  "api": {
+    "poweredbyquicksight": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "poweredbyquicksightd245d0359"
+        }
+      ],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authpoweredbyquicksightd245d0359"
+            }
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
+  "auth": {
+    "poweredbyquicksightd245d0359": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL",
+          "FAMILY_NAME",
+          "GIVEN_NAME"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "pbqAnonymousDashboardEmbedding": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "pbqAnonymousQEmbedding": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "pbqAnonymousVisualEmbedding": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "pbqTenantOnboarding": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "poweredbyquicksightd245d0359"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "pbqUserBasedConsoleEmbedding": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "pbqUserBasedDashboardEmbedding": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "pbqUserBasedQEmbedding": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "pbqUserBasedVisualEmbedding": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_pbqAnonymousDashboardEmbedding_dashboardIdList": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqAnonymousDashboardEmbedding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqAnonymousDashboardEmbedding_dashboardNameList": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqAnonymousDashboardEmbedding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqAnonymousDashboardEmbedding_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqAnonymousDashboardEmbedding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqAnonymousDashboardEmbedding_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqAnonymousDashboardEmbedding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqAnonymousQEmbedding_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqAnonymousQEmbedding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqAnonymousQEmbedding_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqAnonymousQEmbedding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqAnonymousQEmbedding_topicIdList": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqAnonymousQEmbedding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqAnonymousVisualEmbedding_dashboardId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqAnonymousVisualEmbedding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqAnonymousVisualEmbedding_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqAnonymousVisualEmbedding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqAnonymousVisualEmbedding_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqAnonymousVisualEmbedding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqAnonymousVisualEmbedding_sheetId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqAnonymousVisualEmbedding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqAnonymousVisualEmbedding_visualId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqAnonymousVisualEmbedding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqTenantOnboarding_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqTenantOnboarding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqTenantOnboarding_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqTenantOnboarding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqUserBasedConsoleEmbedding_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqUserBasedConsoleEmbedding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqUserBasedConsoleEmbedding_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqUserBasedConsoleEmbedding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqUserBasedDashboardEmbedding_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqUserBasedDashboardEmbedding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqUserBasedDashboardEmbedding_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqUserBasedDashboardEmbedding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqUserBasedQEmbedding_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqUserBasedQEmbedding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqUserBasedQEmbedding_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqUserBasedQEmbedding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqUserBasedVisualEmbedding_dashboardId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqUserBasedVisualEmbedding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqUserBasedVisualEmbedding_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqUserBasedVisualEmbedding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqUserBasedVisualEmbedding_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqUserBasedVisualEmbedding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqUserBasedVisualEmbedding_sheetId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqUserBasedVisualEmbedding"
+        }
+      ]
+    },
+    "AMPLIFY_function_pbqUserBasedVisualEmbedding_visualId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pbqUserBasedVisualEmbedding"
+        }
+      ]
+    }
+  }
+}

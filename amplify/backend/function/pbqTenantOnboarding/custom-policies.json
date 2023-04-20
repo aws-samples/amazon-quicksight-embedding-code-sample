@@ -1,0 +1,22 @@
+[
+  {
+    "Action": [
+      "iam:GetRole",
+      "iam:CreateRole"],
+    "Resource": ["*"]
+  },
+  {
+    "Action": [
+      "quicksight:DescribeNamespace",
+      "quicksight:CreateNamespace",
+      "quicksight:CreateGroup",
+      "quicksight:TagResource",
+      "ds:AuthorizeApplication",
+      "ds:UnauthorizeApplication",
+      "ds:DeleteDirectory",
+      "ds:CreateIdentityPoolDirectory",
+      "ds:DescribeDirectories"],
+    "Resource": ["*"],
+    "Effect": "Allow"
+  }
+]

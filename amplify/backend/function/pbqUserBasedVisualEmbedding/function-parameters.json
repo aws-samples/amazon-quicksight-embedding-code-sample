@@ -1,0 +1,17 @@
+{
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "dashboardId",
+      "environmentVariableName": "DashboardId"
+    },
+    {
+      "cloudFormationParameterName": "sheetId",
+      "environmentVariableName": "SheetId"
+    },
+    {
+      "cloudFormationParameterName": "visualId",
+      "environmentVariableName": "VisualId"
+    }
+  ]
+}

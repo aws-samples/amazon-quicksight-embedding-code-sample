@@ -1,0 +1,15 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+# input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
+
+type Query @aws_cognito_user_pools
+{
+  anonymousDashboardEmbedding(tag_value: String): String @function(name: "pbqAnonymousDashboardEmbedding-${env}")
+  anonymousQEmbedding(tag_value: String): String @function(name: "pbqAnonymousQEmbedding-${env}")
+  anonymousVisualEmbedding(tag_value: String): String @function(name: "pbqAnonymousVisualEmbedding-${env}")
+  userBasedConsoleEmbedding(openIdToken: AWSJSON): String @function(name: "pbqUserBasedConsoleEmbedding-${env}")
+  userBasedDashboardEmbedding(openIdToken: AWSJSON): String @function(name: "pbqUserBasedDashboardEmbedding-${env}")
+  userBasedQEmbedding(openIdToken: AWSJSON): String @function(name: "pbqUserBasedQEmbedding-${env}")
+  userBasedVisualEmbedding(openIdToken: AWSJSON): String @function(name: "pbqUserBasedVisualEmbedding-${env}")
+  tenantOnboarding(company_name: String): String @function(name: "pbqTenantOnboarding-${env}")
+}

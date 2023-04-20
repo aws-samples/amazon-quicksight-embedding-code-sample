@@ -1,0 +1,14 @@
+{
+  "permissions": {},
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "dashboardIdList",
+      "environmentVariableName": "DashboardIdList"
+    },
+    {
+      "cloudFormationParameterName": "dashboardNameList",
+      "environmentVariableName": "DashboardNameList"
+    }
+  ]
+}

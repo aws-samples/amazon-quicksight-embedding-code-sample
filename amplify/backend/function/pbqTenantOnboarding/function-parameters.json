@@ -1,0 +1,10 @@
+{
+  "lambdaLayers": [],
+  "permissions": {
+    "auth": {
+      "poweredbyquicksightd245d0359": [
+        "read"
+      ]
+    }
+  }
+}

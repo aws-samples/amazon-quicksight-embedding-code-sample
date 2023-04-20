@@ -1,0 +1,9 @@
+{
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "topicIdList",
+      "environmentVariableName": "TopicIdList"
+    }
+  ]
+}

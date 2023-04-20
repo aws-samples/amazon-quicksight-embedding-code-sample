@@ -1,0 +1,12 @@
+[
+  {
+    "Action": [
+      "quicksight:GenerateEmbedUrlForAnonymousUser"
+    ],
+    "Resource": [
+      "arn:aws:quicksight:*:*:namespace/default",
+      "arn:aws:quicksight:*:*:dashboard/*"
+  ],
+    "Effect": "Allow"
+  }
+]
